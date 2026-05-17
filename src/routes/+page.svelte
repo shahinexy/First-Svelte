@@ -1,8 +1,11 @@
 <script>
-const src = "hello"
+let count = $state(0)
 </script>
 
-<h1>Welcome to SvelteKit, {src}</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<div class="space-y-5">
+    <h1>Welcome to SvelteKit</h1>
 
-<a href="/about" >About Page</a>
+    <button onclick={()=> count++} class="bg-blue-600 px-6 py-2 rounded text-white cursor-pointer" >Click Count = {count}</button>
+</div>
+
+
